@@ -1,0 +1,229 @@
+<!--default template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Ana Sayfa | Eldes Elektronik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="eldes_tabicon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll To Top Button Style */
+        #myBtn {
+        /* İmage src for arrow up icon
+        <i class="fa-solid fa-arrow-up"></i> */
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: 555; /* Set a background color */
+        color: red; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        transition: ease 0.5;
+        }
+
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        transition: 0.2s;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .contactBtn:hover {
+            color: rgba(185, 4, 4, 0.966);
+            transition: 0.5s;
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .w3-bar-item {
+            margin-bottom: -10px;
+            text-decoration: none;
+        }
+
+
+        .w3-button-link:hover {
+            font-family: "Montserrat", sans-serif;
+            transition-duration: 0.3s;
+            /* background-color: rgba(255, 0, 0, 0.5); */
+            color: rgba(255, 0, 0);
+            /* text-decoration: underline; */
+        }
+    </style>
+</head>
+
+<body style="background-image: url(background_image.jpg);">
+
+    <!-- Scroll To Top Button -->
+    <button class="fa-solid fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <!-- Navbar -->
+    <div class="w3-top" style="background-color: #fffff0;">
+        <!-- Contacts Bar Start-->
+        <div class="w3-bar" style="padding-top: 10px; padding-bottom: 3px; font-size: 15px;">
+            <a href="tel:+902165741428" class="w3-right contactBtn" style="margin-right: 16.5cap; margin-left: 20px; text-decoration: none;">+90 (216) 574 14 28</a>
+            <a href="mailto:info@eldes.com.tr" class="w3-right contactBtn" style="text-decoration: none;">info@eldes.com.tr</a>
+        </div>
+        <!-- Contacts Bar End-->
+        
+        <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button" href="http://eldes.com.tr/">
+                <img loading="lazy" width="250" height="60" src="eldes_logo.jpg" alt="Eldes Mühendislik" style="margin-left: 10cap;">
+            </a>
+            <a href="contact_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right" style="margin-right: 10cap;">İletişim</a>
+            <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Hakkımızda</a>
+            <a href="eldes_urunler_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Ürünler</a>
+            <a href="eldes_homepage_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Anasayfa</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Anasayfa</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Ürünler</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Hakkımızda</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">İletişim</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">START PAGE</h1>
+        <p class="w3-xlarge">Template by w3.css</p>
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Lorem Ipsum</h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+                <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Lorem Ipsum</h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+                <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <!-- Scroll to the Top -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

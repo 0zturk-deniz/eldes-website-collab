@@ -1,0 +1,298 @@
+<!--default template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ürünler | Eldes Elektronik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="eldes_tabicon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll To Top Button Style */
+        #myBtn {
+        /* İmage src for arrow up icon
+        <i class="fa-solid fa-arrow-up"></i> */
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: 555; /* Set a background color */
+        color: red; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        transition: ease 0.5;
+        }
+
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        transition: 0.2s;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .contactBtn{
+            color: black;
+        }
+
+        .contactBtn:hover {
+            color: rgba(185, 4, 4, 0.966);
+            transition: 0.5s;
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .w3-bar-item {
+            margin-bottom: -10px;
+            text-decoration: none;
+        }
+
+        .w3-button-link{
+            color: black;
+        }
+
+        .w3-button-link:hover {
+            font-family: "Montserrat", sans-serif;
+            transition-duration: 0.3s;
+            /* background-color: rgba(255, 0, 0, 0.5); */
+            color: rgba(255, 0, 0);
+            /* text-decoration: underline; */
+        }
+    </style>
+</head>
+
+
+<body style="background-image: url(background_image.jpg);">
+
+    <!-- Scroll To Top Button -->
+    <button class="fa-solid fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <!-- Navbar -->
+    <div class="w3-top" style="background-color: #fffff0;">
+        <!-- Contacts Bar Start-->
+        <div class="w3-bar" style="padding-top: 10px; padding-bottom: 3px; font-size: 15px;">
+            <a href="tel:+902165741428" class="w3-right contactBtn" style="margin-right: 16.5cap; margin-left: 20px; text-decoration: none;">+90 (216) 574 14 28</a>
+            <a href="mailto:info@eldes.com.tr" class="w3-right contactBtn" style="text-decoration: none;">info@eldes.com.tr</a>
+        </div>
+        <!-- Contacts Bar End-->
+        
+        <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-white" href="http://eldes.com.tr/">
+                <img loading="lazy" width="250" height="60" src="eldes_logo.jpg" alt="Eldes Mühendislik" style="margin-left: 10cap;"></a>
+            <a href="contact_v1.html"
+                class="w3-bar-item w3-button-link w3-padding-32 w3-right" style="margin-right: 10cap;">İletişim</a>
+            <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Hakkımızda</a>
+            <a href="eldes_urunler_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Ürünler</a>
+            <a href="eldes_homepage_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Anasayfa</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Anasayfa</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Ürünler</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Hakkımızda</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">İletişim</a>
+        </div>
+    </div>
+
+    <!-- Grid Layout Start -->
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <nav class="col-md-2 col-lg-2 d-md-block sidebar">
+            <div class="sidebar-sticky pt-3" style="margin-top: 150px;">
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 1
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 1</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 1</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 2
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 2</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 2</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 3
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 3</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 3</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 4
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 4</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 4</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 5
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 5</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 5</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 6
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 6</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 6</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 7
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 7</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 7</p>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <a class="btn btn-primary w-100" href="#" role="button">
+                    Product 8
+                  </a>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Detail 8</p>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Info 8</p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+     
+
+
+
+    <!-- Grid Layout End -->
+
+
+    <!-- Footer  -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <!-- Scroll to the Top -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+<!-- Bootstrap Popper and JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- Bootstrap Popper and JS -->
+</body>
+
+</html>
