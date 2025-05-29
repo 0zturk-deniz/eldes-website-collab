@@ -6,6 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <p>Test</p>
       <Routes>
         <Route path="/" element={<div>Anasayfa</div>} />
         <Route path="/urunler" element={<div>Ürünler</div>} />
