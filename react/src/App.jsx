@@ -6,10 +6,71 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <p>Test</p>
       <Routes>
         <Route path="/" element={<div>Anasayfa</div>} />
-        <Route path="/urunler" element={<div>Ürünler</div>} />
+
+        {/* ## Urunler */}
+        <Route path="/urunler" element={
+          <div className="pt-10" >
+            Ürünler
+            <p>MESELA</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+          </div>
+          } />
         <Route path="/iletisim" element={<div>İletişim</div>} />
       </Routes>
     </BrowserRouter>
