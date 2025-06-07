@@ -1,78 +1,33 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      {/* Navbar.jsx Component */}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<div>Anasayfa</div>} />
+      {/* ScrollToTop.jsx Component */}
+      <ScrollToTop/>
 
-        {/* ## Urunler */}
-        <Route path="/urunler" element={
-          <div className="pt-10" >
-            Ürünler
-            <p>MESELA</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-          </div>
+
+      <div className="pt-20"> {/* Add padding container around all routes */}
+        <Routes>
+          <Route path="/" element={<div>Anasayfa</div>} />
+          
+          <Route path="/urunler" element={
+            <div className="min-h-screen" style={{ minHeight: '200vh' }}>
+              Ürünler
+              <p>MESELA</p>
+              <p>Test</p>
+              {/* ... rest of your content */}
+            </div>
           } />
-        <Route path="/iletisim" element={<div>İletişim</div>} />
-      </Routes>
+          
+          <Route path="/iletisim" element={<div>İletişim</div>} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
